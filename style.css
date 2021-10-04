@@ -1,0 +1,143 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Navbar */
+nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  transition: all 500ms ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 15;
+}
+
+li {
+  height: 20%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms 1s ease-in-out;
+  position: relative;
+  /* left: 100vw; */
+  z-index: 15;
+  left: -150vw;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+li:nth-child(1) {
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+li:nth-child(2) {
+  background: #6d597a;
+  transition: all 0.6s ease-in-out;
+}
+
+li:nth-child(3) {
+  background: #b56576;
+  transition: all 0.9s ease-in-out;
+}
+
+li:nth-child(4) {
+  background: #e56b6f;
+  transition: all 1.2s ease-in-out;
+}
+
+li:nth-child(5) {
+  background: #eaac8b;
+  transition: all 1.5s ease-in-out;
+}
+
+/* Transformation --> Moving Right */
+.translate-nav {
+  transform: translateX(100vw);
+}
+
+.translate-link {
+  transform: translateX(150vw);
+}
+
+/* Button */
+button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  background: none;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+i {
+  transition: all 500ms ease-in-out;
+}
+
+/* Home */
+#home {
+  justify-content: start;
+  align-items: flex-start;
+  background: url("https://images.unsplash.com/photo-1486325212027-8081e485255e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmdzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
+    no-repeat center center/cover;
+  top: 0;
+}
+
+h4 {
+  margin-left: 20px;
+  border-bottom: 2px solid white;
+  padding: 5px;
+}
+
+#about {
+  background: #6d597a;
+}
+
+#skills {
+  background: #b56576;
+}
+
+#projects {
+  background: #e56b6f;
+}
+
+#contact {
+  background: #eaac8b;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: -10;
+}
